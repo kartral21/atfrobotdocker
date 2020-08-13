@@ -1,4 +1,4 @@
-# ATF POC - Containerize Robot with docker and run on kubernetes cluster
+# ATF proof of concept - containerize robot with docker and run on kubernetes cluster
 
 ## Prerequisites
 You must install and configure the following tools before moving forward
