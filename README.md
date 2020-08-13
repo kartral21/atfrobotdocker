@@ -2,8 +2,7 @@
 
 ## Prerequisites
 You must install and configure the following tools before moving forward
-* nodeJS
-* nocker
+* docker
 * minikube
 * kubectl
 * helm
