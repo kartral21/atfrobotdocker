@@ -74,7 +74,7 @@ Test                                                                  | PASS |
 1 critical test, 1 passed, 0 failed
 1 test total, 1 passed, 0 failed
 ==============================================================================
-Output:  /output.xml
-Log:     /log.html
-Report:  /report.html
+Output:  /tmp/robot/output.xml
+Log:     /tmp/robot/log.html
+Report:  /tmp/robot/report.html
 ```
