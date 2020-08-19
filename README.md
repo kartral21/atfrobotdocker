@@ -74,3 +74,47 @@ Output:  /tmp/robot/output.xml
 Log:     /tmp/robot/log.html
 Report:  /tmp/robot/report.html
 ```
+
+### Robot running on OpenShift cluster
+
+Verify the Pod in OpenShift cluster 
+
+```bash
+oc get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+atfrobotdocker-6cc6cd4db4-6m7tb   1/1     Running   0          11m
+```
+
+Copy the robot directory to your container 
+
+```bash
+oc rsync ./robot <your_pod_name>:/tmp
+```
+
+Verify Robot is running in the container
+
+```bash
+oc exec <your_pod_name> -it -- /bin/sh
+# robot --version
+Robot Framework 3.2.1 (Python 3.8.5 on linux)
+```
+
+ Run the tests. Your results should look like 
+
+```bash
+# cd tmp/robot
+# robot test.robot
+==============================================================================
+Test                                                                          
+==============================================================================
+Test Robot Framework Logging                                          ..Display to console while Robot is running
+Test Robot Framework Logging                                          | PASS |
+------------------------------------------------------------------------------
+Test                                                                  | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  /tmp/robot/output.xml
+Log:     /tmp/robot/log.html
+Report:  /tmp/robot/report.html
+```
