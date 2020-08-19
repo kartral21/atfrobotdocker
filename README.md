@@ -77,6 +77,12 @@ Report:  /tmp/robot/report.html
 
 ### Robot running on OpenShift cluster
 
+Create project in OpenShift cluster 
+
+```bash
+oc new-project atfrobotdocker
+```
+
 Verify the Pod in OpenShift cluster 
 
 ```bash
