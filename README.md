@@ -6,7 +6,7 @@ You must install and configure the following tools before moving forward
 * minikube
 * kubectl
 * helm
-* Kubernetes cluster must be running
+* kubernetes cluster must be running
 
 ## Usage
 
@@ -36,7 +36,7 @@ helm install atfrobotdocker ./atfrobotdocker-0.1.0.tgz
 Verify the Pod in Kubernetes cluster 
 
 ```bash
-karthiks-mbp:atfnodejsdocker karthikrallapalli$ kubectl get pods
+kubectl get pods
 NAME                               READY   STATUS    RESTARTS   AGE
 atfnodejsdocker-5b5fc7dd65-n7h4g   1/1     Running   0          69m
 atfrobotdocker-6cc6cd4db4-72x6x    1/1     Running   0          89m
