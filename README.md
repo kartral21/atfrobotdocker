@@ -59,7 +59,7 @@ kubectl exec <your_pod_name> -it -- /bin/sh
 Robot Framework 3.2.1 (Python 3.8.5 on linux)
 ```
 
- run the tests. Your results should look like 
+ Run the tests. Your results should look like 
 
 ```bash
 # cd tmp/robot
