@@ -44,6 +44,13 @@ atfrobotdocker-6cc6cd4db4-72x6x    1/1     Running   0          89m
 
 ### Robot
 
+
+Copy the robot directory to your container 
+
+```bash
+kubectl cp ./robot <your_pod_name>:/tmp 
+```
+
 Verify Robot is running in the container
 
 ```bash
@@ -52,9 +59,10 @@ kubectl exec <your_pod_name> -it -- /bin/sh
 Robot Framework 3.2.1 (Python 3.8.5 on linux)
 ```
 
-Copy the test.robot file to your container & run the tests. Your results should look like 
+ run the tests. Your results should look like 
 
 ```bash
+# cd tmp/robot
 # robot test.robot
 ==============================================================================
 Test                                                                          
