@@ -1,12 +1,11 @@
-# ATF Proof of concept - Containerize robot with docker and run on kubernetes cluster
+# ATF Proof of concept - Containerize robot with docker and run on Kubernetes or OpenShift cluster
 
 ## Prerequisites
 You must install and configure the following tools before moving forward
 * docker
-* minikube
-* kubectl
+* kubectl(Kuberntes cluster) or oc(OpenShift cluster)
 * helm
-* kubernetes cluster must be running
+* Kubernetes or OpenShift cluster must be running
 
 ## Usage
 
@@ -31,7 +30,7 @@ helm package atfrobotdocker
 
 helm install atfrobotdocker ./atfrobotdocker-0.1.0.tgz
 ```
-### Kubernetes
+### Robot running on Kubernetes cluster
 
 Verify the Pod in Kubernetes cluster 
 
@@ -41,9 +40,6 @@ NAME                               READY   STATUS    RESTARTS   AGE
 atfnodejsdocker-5b5fc7dd65-n7h4g   1/1     Running   0          69m
 atfrobotdocker-6cc6cd4db4-72x6x    1/1     Running   0          89m
 ```
-
-### Robot
-
 
 Copy the robot directory to your container 
 
