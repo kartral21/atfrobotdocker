@@ -36,7 +36,6 @@ Verify the Pod in Kubernetes cluster
 ```bash
 kubectl get pods
 NAME                               READY   STATUS    RESTARTS   AGE
-atfnodejsdocker-5b5fc7dd65-n7h4g   1/1     Running   0          69m
 atfrobotdocker-6cc6cd4db4-72x6x    1/1     Running   0          89m
 ```
 
