@@ -82,7 +82,7 @@ Create project in OpenShift cluster
 oc new-project atfrobotdocker
 ```
 
-Use helm to package & deploy to Kubernetes cluster 
+Use helm to package & deploy to OpenShift cluster 
 
 ```bash
 helm package atfrobotdocker
