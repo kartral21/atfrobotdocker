@@ -21,7 +21,7 @@ docker login                           // To login into dockerhub
 docker push  <your username>/<appname> // push image to your repo
 ```
 
-### Helm
+### Robot running on Kubernetes cluster
 
 Use helm to package & deploy to Kubernetes cluster 
 
@@ -30,7 +30,6 @@ helm package atfrobotdocker
 
 helm install atfrobotdocker ./atfrobotdocker-0.1.0.tgz
 ```
-### Robot running on Kubernetes cluster
 
 Verify the Pod in Kubernetes cluster 
 
@@ -81,6 +80,14 @@ Create project in OpenShift cluster
 
 ```bash
 oc new-project atfrobotdocker
+```
+
+Use helm to package & deploy to Kubernetes cluster 
+
+```bash
+helm package atfrobotdocker
+
+helm install atfrobotdocker ./atfrobotdocker-0.1.0.tgz
 ```
 
 Verify the Pod in OpenShift cluster 
