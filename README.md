@@ -16,9 +16,9 @@ Use docker to buid & push to docker hub
 ```bash
 docker build -t <your username>/<appname> .
 
-docker login                           // To login into dockerhub
+docker login                           
 
-docker push  <your username>/<appname> // push image to your repo
+docker push  <your username>/<appname> 
 ```
 
 ### Robot running on Kubernetes cluster
