@@ -20,6 +20,7 @@ docker login
 
 docker push  <your username>/<appname> 
 ```
+Replace the repository in values.yaml with your docker image
 
 ### Robot running on Kubernetes cluster
 
